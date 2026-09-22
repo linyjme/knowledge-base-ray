@@ -18,6 +18,7 @@ question_variants:
 - How do I reach the user portal and sign in with my assigned account?
 - What should I enter when the Raysync login page asks for credentials?
 - Why can an administrator-provided portal address matter for sign-in?
+- Why does the user portal say Invalid user for an administrator account?
 keywords:
 - login
 - username
@@ -34,7 +35,8 @@ safety_tags:
 - certificate
 supersedes: []
 superseded_by: []
-related_articles: []
+related_articles:
+- RSKB-ADMIN-056
 source_refs:
 - file: raysync-user-faq/01-getting-started-and-login.md
   section: FAQ-START-003 | How do I sign in to Raysync?
@@ -70,7 +72,7 @@ The default port example is documented across the current user guides. The sourc
 
 ## Important notes
 
-Do not substitute the administrator portal address for the user portal address. The server may use a customized hostname, HTTPS address, or port, so the address provided by your organization takes precedence over the default example.
+Do not substitute the administrator portal address for the user portal address. The default user portal address is `http://[server-IP]:8090`. The default admin console address is `http://[server-IP]:9090/admin`. Port 9090 alone is not that console URL; the page path is `/admin`. An organization-provided hostname or HTTPS address takes precedence over these defaults. `Invalid user: (admin)` on port 8090 means that account name was submitted to the user portal, not to the admin console.
 
 ## Related documented boundaries
 

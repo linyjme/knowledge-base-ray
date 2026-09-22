@@ -52,7 +52,7 @@ verification:
 
 ## Short answer
 
-Run the desktop client’s **Error Detection** and record the failed service port. For the current firewall guide, the documented minimum HTTP set is TCP 8090, 9090, 2480, and 2442 plus UDP 32001; the minimum HTTPS set is TCP 8091, 9091, 2481, and 2443 plus UDP 32001. Peer-to-peer transfer is consistently documented as TCP 3443, UDP 3478, and UDP 32003.
+Run the desktop client’s **Error Detection** and record the failed service port. For the current firewall guide, the documented minimum HTTP set is TCP 8090, 9090, 2480, and 2442 plus UDP 32001; the minimum HTTPS set is TCP 8091, 9091, 2481, and 2443 plus UDP 32001. Peer-to-peer transfer is consistently documented as TCP 3443, UDP 3478, and UDP 32003. In that HTTP set, 8090 is the user portal port for `http://[server-IP]:8090`, and 9090 is the admin console port for `http://[server-IP]:9090/admin`. A port number by itself is not a browser address.
 
 ## Diagnostic boundary
 
