@@ -160,6 +160,8 @@ The supplied sources do not document a user-visible change to the reset sequence
 
 The verification code expires after 10 minutes. **Resend** becomes available after 60 seconds. Forgotten-password recovery works only when the administrator has configured system email and the account has the correct login email.
 
+This procedure resets an **end-user** account. A forgotten **admin** account password is reset on the machine where the Raysync service is deployed, using **AdminUnlockTool**. On a Windows deployment, run **AdminUnlockTool.exe** and follow its operations. The user portal **Forget Password** flow does not reset the admin account.
+
 #### Sources
 
 - `profile.md` — “Forget Password”
