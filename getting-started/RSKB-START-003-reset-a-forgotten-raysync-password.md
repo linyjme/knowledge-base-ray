@@ -75,7 +75,7 @@ The supplied sources do not document a user-visible change to the reset sequence
 
 The verification code expires after 10 minutes. **Resend** becomes available after 60 seconds. Forgotten-password recovery works only when the administrator has configured system email and the account has the correct login email.
 
-This article resets an **end-user** account. A forgotten **admin** account password is reset on the Raysync server with **AdminUnlockTool**. On Windows that program is **AdminUnlockTool.exe**. See RSKB-ADMIN-057.
+This article resets an **end-user** account. A forgotten **admin** account password is reset on the Raysync server with the **AdminUnlockTool** binary. On Linux the binary is **AdminUnlockTool**. On Windows the binary is **AdminUnlockTool.exe**. See RSKB-ADMIN-057.
 
 Personal **Mail Settings** are not a recovery prerequisite. They configure a sender for share-download and invite-upload notifications; recovery uses the separate system mail service and the account's login email.
 

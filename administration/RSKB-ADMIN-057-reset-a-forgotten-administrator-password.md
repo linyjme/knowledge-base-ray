@@ -16,7 +16,8 @@ version_status: current
 status: active
 question_variants:
 - How do I reset the admin password when it has been forgotten?
-- Where is AdminUnlockTool used to reset the administrator account?
+- Where is AdminUnlockTool used to reset the administrator account on Linux?
+- Where is AdminUnlockTool.exe used to reset the administrator account on Windows?
 - Can Forget Password on the user portal reset the admin account?
 keywords:
 - admin password
@@ -48,13 +49,13 @@ verification:
 
 ## Short answer
 
-Reset a forgotten **admin** account password on the machine where the Raysync service is deployed. Find **AdminUnlockTool** in that installation and follow the operations it presents. On a Windows deployment, the program is the binary **AdminUnlockTool.exe**. This applies only when the admin password has been forgotten and the admin account password must be reset.
+Reset a forgotten **admin** account password on the machine where the Raysync service is deployed, using the **AdminUnlockTool** binary shipped with that installation. On Linux the binary is **AdminUnlockTool**. On Windows the binary is **AdminUnlockTool.exe**. Follow the operations the program presents. This applies only when the admin password has been forgotten and the admin account password must be reset.
 
 ## Steps
 
 1. Go to the server where the Raysync service is installed. Do this on that machine. The user portal **Forget Password** page does not reset the admin account.
-2. Find **AdminUnlockTool** in the Raysync installation.
-3. On Windows, run **AdminUnlockTool.exe**. On other deployments, run the **AdminUnlockTool** script shipped with that installation.
+2. Find the unlock binary in the Raysync installation on that server.
+3. On Linux, run the binary **AdminUnlockTool**. On Windows, run the binary **AdminUnlockTool.exe**.
 4. Follow the operations shown by the tool to reset the admin account password.
 5. Sign in to the admin console at `http://[server-IP]:9090/admin` with the admin account and the new password.
 
